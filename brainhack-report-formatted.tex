@@ -1,0 +1,321 @@
+%% BioMed_Central_Tex_Template_v1.06
+%%                                      %
+%  bmc_article.tex            ver: 1.06 %
+%                                       %
+
+%%IMPORTANT: do not delete the first line of this template
+%%It must be present to enable the BMC Submission system to
+%%recognise this template!!
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                     %%
+%%  LaTeX template for BioMed Central  %%
+%%     journal article submissions     %%
+%%                                     %%
+%%          <8 June 2012>              %%
+%%                                     %%
+%%                                     %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                                                 %%
+%% For instructions on how to fill out this Tex template           %%
+%% document please refer to Readme.html and the instructions for   %%
+%% authors page on the biomed central website                      %%
+%% http://www.biomedcentral.com/info/authors/                      %%
+%%                                                                 %%
+%% Please do not use \input{...} to include other tex files.       %%
+%% Submit your LaTeX manuscript as one .tex document.              %%
+%%                                                                 %%
+%% All additional figures and files should be attached             %%
+%% separately and not embedded in the \TeX\ document itself.       %%
+%%                                                                 %%
+%% BioMed Central currently use the MikTex distribution of         %%
+%% TeX for Windows) of TeX and LaTeX.  This is available from      %%
+%% http://www.miktex.org                                           %%
+%%                                                                 %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% additional documentclass options:
+%  [doublespacing]
+%  [linenumbers]   - put the line numbers on margins
+
+%%% loading packages, author definitions
+
+\documentclass[twocolumn]{bmcart}% uncomment this for twocolumn layout and comment line below
+%\documentclass{bmcart}
+
+%%% Load packages
+\usepackage{amsthm,amsmath}
+\usepackage{siunitx}
+\usepackage{mfirstuc}
+%\RequirePackage{natbib}
+\usepackage[colorinlistoftodos]{todonotes}
+\RequirePackage{hyperref}
+\usepackage[utf8]{inputenc} %unicode support
+%\usepackage[applemac]{inputenc} %applemac support if unicode package fails
+%\usepackage[latin1]{inputenc} %UNIX support if unicode package fails
+\usepackage[htt]{hyphenat}
+
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                             %%
+%%  If you wish to display your graphics for   %%
+%%  your own use using includegraphic or       %%
+%%  includegraphics, then comment out the      %%
+%%  following two lines of code.               %%
+%%  NB: These line *must* be included when     %%
+%%  submitting to BMC.                         %%
+%%  All figure files must be submitted as      %%
+%%  separate graphics through the BMC          %%
+%%  submission process, not included in the    %%
+%%  submitted article.                         %%
+%%                                             %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%\def\includegraphic{}
+%\def\includegraphics{}
+
+%%% Put your definitions there:
+\startlocaldefs
+\endlocaldefs
+
+
+%%% Begin ...
+\begin{document}
+
+%%% Start of article front matter
+\begin{frontmatter}
+
+\begin{fmbox}
+\dochead{Report from 2015 OHBM Hackathon (HI)}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Enter the title of your article here     %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{Advancing Open Science through NiData}
+\vskip2ex
+\projectURL{Project URL: \url{http://github.com/nidata/hackathon}}
+
+\author[
+addressref={aff1},
+corref={aff1},
+email={bcipollini@ucsd.edu}
+]{\inits{BC} \fnm{B} \snm{Cipollini}}
+\author[
+addressref={aff2},
+%
+email={arokem@uw.edu}
+]{\inits{AR} \fnm{A.} \snm{Rokem}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Enter the authors' addresses here        %%
+%%                                          %%
+%% Repeat \address commands as much as      %%
+%% required.                                %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\address[id=aff1]{%
+  \orgname{University of California, San Diego},
+  \city{San Diego},
+  \street{1 Embarcardo St},
+  \postcode{90270},
+  \postcode{California},
+  \cny{USA}
+}
+\address[id=aff2]{%
+  \orgname{University of Washington},
+  \city{Seattle},
+  \street{1 Pike's Place},
+  \postcode{87777},
+  \postcode{Washington},
+  \cny{USA}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Enter short notes here                   %%
+%%                                          %%
+%% Short notes will be after addresses      %%
+%% on first page.                           %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{artnotes}
+\end{artnotes}
+
+%\end{fmbox}% comment this for two column layout
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% The Abstract begins here                 %%
+%%                                          %%
+%% Please refer to the Instructions for     %%
+%% authors on http://www.biomedcentral.com  %%
+%% and include the section headings         %%
+%% accordingly for your article type.       %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\begin{abstractbox}
+
+%\begin{abstract} % abstract
+	
+%Blank Abstract
+
+%\end{abstract}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% The keywords begin here                  %%
+%%                                          %%
+%% Put each keyword in separate \kwd{}.     %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\vskip1ex
+
+%\projectURL{\url{http://github.com/nidata/hackathon}}
+%\projectURL{http://github.com/nidata/hackathon}
+
+% MSC classifications codes, if any
+%\begin{keyword}[class=AMS]
+%\kwd[Primary ]{}
+%\kwd{}
+%\kwd[; secondary ]{}
+%\end{keyword}
+
+%\end{abstractbox}
+%
+\end{fmbox}% uncomment this for twcolumn layout
+
+\end{frontmatter}
+
+%{\sffamily\bfseries\fontsize{10}{12}\selectfont Project URL: \url{http://github.com/nidata/hackathon}}
+
+%%% Import the body from pandoc formatted text
+\section{Introduction}\label{introduction}
+
+The goal of this project is to improve accessibility of open datasets by
+curating them. \href{http://github.com/nidata/nidata}{``NiData''} aims
+to provide a common interface for documentation, downloads, and examples
+to all open neuroimaging datasets, making data usable for experts and
+non-experts alike.
+
+\section{Approach}\label{approach}
+
+Open datasets promise to allow more thorough analysis of hard-to-collect
+data and re-analysis using state-of-the-art analysis methods. However,
+open datasets are not truly open unless they are easy to find, simple to
+access, and have sufficient documentation for use. Currently, publicly
+available data in neuroscience are scattered across a number of websites
+and databases, without a common data format no common method for data
+access, and varying levels of documentation. Datasets are being uploaded
+to public databases through a number of initiatives, including
+\href{http://www.openfmri.org/}{OpenFMRI} and
+\href{http://www.nitrc.org}{NITRC}. In addition, there are funded
+efforts for collecting data explicitly for the purpose of public sharing
+-- most visibly in the \href{http://www.humanconnectome.org/}{Human
+Connectome Project (HCP)} - but also in the
+\href{http://pingstudy.ucsd.edu/}{Pediatric Imaging, Neurocognition and
+Genetics (PING)} study. There are a number of funded efforts to collect
+old data and re-release as public databases, notably the
+\href{http://fcon_1000.projects.nitrc.org/indi/IndiRetro.html}{INDI}\cite{Mennes2013}
+efforts (which include the popular ABIDE and F1000 datasets). The
+\href{http://braininitiative.nih.gov/}{BRAIN initiative} aims to collect
+data that will be a
+\href{http://www.brainupdate.nih.gov/calling-all-statisticians/}{challenge
+to store, let alone analyze}. There are even online journals focused on
+publishing datasets (e.g. \href{http://www.nature.com/sdata/}{Nature
+Scientific Data}), or with options to release data (e.g.
+\href{http://f1000research.com/articles?tab=ALL\&articleTypes=DATA_NOTE\&subjectArea=396}{F1000
+``Data Notes''}).
+
+Nidata is a Python package that provides a single interface accessing
+data from a variety of open data sources. The software framework makes
+it easy to add new data sources, simple to define and to provide access
+to multiple datasets from a single data source. Software dependencies
+are managed on a per-dataset basis, allowing downloads and examples to
+use any public packages without requiring installation of packages
+required by unused datasets. The interface also allows selective
+download of data (by subject or type) and caches files locally, allowing
+easy management of big datasets.
+
+\section{Results}\label{results}
+
+We focused on exposing new methods for downloading data from the HCP. We
+were able to provide a downloader that accepts login credentials and
+downloads files locally. We created
+\href{https://github.com/arokem/nidata/blob/bcipolli-ohbm2015-ipynb/ipynb/hcp-fetcher-dwi.ipynb}{an
+example} that interacts with \href{https://github.com/nipy/dipy}{dipy}
+to produce diffusion imaging results on a single subject from the HCP.
+We also worked at collecting common data sources, as well as individual
+datasets stored at each data source, into
+\href{https://github.com/nidata/nidata/wiki/Data-sources}{nidata's
+``data sources'' wiki page}. We incorporated downloads, documentation,
+and examples from the \href{http://github.com/nilearn/nilearn}{nilearn}
+package and began discussion of making a more extensible object model.
+
+Since the hackathon, we have created such an object model and migrated
+all code to use it.
+
+\section{Conclusions}\label{conclusions}
+
+Projects like nidata improve curated data access and increases the
+effectivity of big data projects with open source data.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Backmatter begins here                   %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{backmatter}
+
+\section*{Availability of Supporting Data}
+More information about this project can be found at: \url{http://github.com/nidata/hackathon}. Further data and files supporting this project are hosted in the \emph{GigaScience} repository REFXXX.
+
+\section*{Competing interests}
+None
+
+\section*{Author's contributions}
+BC and AR wrote the software and the report.
+
+\section*{Acknowledgements}
+The authors would like to thank the organizers and attendees of the 2015
+OHBM Hackathon.
+
+  
+  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                  The Bibliography                       %%
+%%                                                         %%
+%%  Bmc_mathpys.bst  will be used to                       %%
+%%  create a .BBL file for submission.                     %%
+%%  After submission of the .TEX file,                     %%
+%%  you will be prompted to submit your .BBL file.         %%
+%%                                                         %%
+%%                                                         %%
+%%  Note that the displayed Bibliography will not          %%
+%%  necessarily be rendered by Latex exactly as specified  %%
+%%  in the online Instructions for Authors.                %%
+%%                                                         %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% if your bibliography is in bibtex format, use those commands:
+\bibliographystyle{bmc-mathphys} % Style BST file
+\bibliography{brainhack-report} % Bibliography file (usually '*.bib' )
+
+\end{backmatter}
+\end{document}
