@@ -169,7 +169,7 @@ email={arokem@uw.edu}
 %\begin{abstractbox}
 
 %\begin{abstract} % abstract
-	
+
 %Blank Abstract
 
 %\end{abstract}
@@ -220,7 +220,7 @@ data and re-analysis using state-of-the-art analysis methods. However,
 open datasets are not truly open unless they are easy to find, simple to
 access, and have sufficient documentation for use. Currently, publicly
 available data in neuroscience are scattered across a number of websites
-and databases, without a common data format no common method for data
+and databases, without a common data format, no common method for data
 access, and varying levels of documentation. Datasets are being uploaded
 to public databases through a number of initiatives, including
 \href{http://www.openfmri.org/}{OpenFMRI} and
@@ -254,7 +254,8 @@ easy management of big datasets.
 
 \section{Results}\label{results}
 
-We focused on exposing new methods for downloading data from the HCP. We
+We focused on exposing new methods for downloading data from the HCP,
+supporting access via Amazon S3 and HTTP/XNAT. We
 were able to provide a downloader that accepts login credentials and
 downloads files locally. We created
 \href{https://github.com/arokem/nidata/blob/bcipolli-ohbm2015-ipynb/ipynb/hcp-fetcher-dwi.ipynb}{an
@@ -269,6 +270,7 @@ package and began discussion of making a more extensible object model.
 
 Since the hackathon, we have created such an object model and migrated
 all code to use it, and a Sphinx-based website is under development.
+The current object model makes it easier to write general-purpose fetchers (e.g. HTTP, XNAT, Amazon S3) that can be extended to access specific databases (e.g. COINS, LORUS, ADNI).
 
 \section{Conclusions}\label{conclusions}
 
@@ -296,8 +298,8 @@ BC and AR wrote the software and the report.
 The authors would like to thank the organizers and attendees of the 2015
 OHBM Hackathon.
 
-  
-  
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%                  The Bibliography                       %%
 %%                                                         %%
